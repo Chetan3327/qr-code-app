@@ -1,0 +1,98 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #E3E3E3;
+  font-family: Arial, sans-serif;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.Controls h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.Controls input[type="text"],
+.Controls input[type="color"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.Controls input[type="color"] {
+  height: 36px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.Controls input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.Controls input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.Controls input[type="color"]::-moz-color-swatch {
+  border: none;
+}
+
+.Controls input[type="color"]::-moz-color-swatch-wrapper {
+  padding: 0;
+}
+
+.Display {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QRCode {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+      padding: 15px;
+  }
+  .Controls input[type="text"],
+  .Controls input[type="color"] {
+      font-size: 12px;
+  }
+  .QRCode {
+      margin: 0;
+  }
+}
+  

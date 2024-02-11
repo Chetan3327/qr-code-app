@@ -40,4 +40,4 @@ The Tech Stacks used are:
 
 Name: Chetan Chauhan - chauhanchetan12789@gmail.com
 
-Project Link: 
+Project Link: https://qr-code-app-3327.netlify.app/

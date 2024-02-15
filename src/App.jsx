@@ -13,7 +13,7 @@ function QrCodeApp() {
 			<div className="Container">
 				<div className='Controls'>
 					<h1>QrCode Generator</h1>
-					<input type="text" value={value} onChange={(e) => setValue(e.target.value)} placeholder="Value .."/>
+					<input type="text" autoFocus value={value} onChange={(e) => setValue(e.target.value)} placeholder="Value .."/>
 					<input type="text" value={size} onChange={(e) => setSize(parseInt(e.target.value === '' ? 0 : e.target.value, 10))} placeholder="Size"/>
 					<div className="color-inputs">
 						<label htmlFor="">BGcolor</label>
